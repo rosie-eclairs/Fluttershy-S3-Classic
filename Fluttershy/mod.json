@@ -1,0 +1,28 @@
+{
+	"Metadata":
+	{
+		"Name": "Fluttershy",
+		"Author": "rosie_eclairs & jdragondawn",
+		"Description": "Fluttershy stumbles back onto Angel Island...this time in widescreen!
+		Additional Raw Data modding by Lave sIime",
+	},
+"Settings":
+{
+	"Palette Options":
+	[
+		{
+			"InternalName": "Palette",
+			"DisplayName": "Palette",
+			"Variable": "Palette",
+			"DefaultValue": "0",
+			"Options":
+			{
+				"0x00": "OG Hack",
+				"0x01": "G4 Accurate Colours",
+				"0x02": "S2"			
+
+			}
+		}
+	]
+  }
+}

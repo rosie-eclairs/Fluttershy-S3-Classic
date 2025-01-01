@@ -1,0 +1,43 @@
+global u16 Palette
+
+function u64 getCharacterPaletteKey(u8 character)
+{
+	if (character == CHARACTER_TAILS)
+	{
+		if (Palette == 0x00)
+		{
+			return "pal0"
+		}
+		if (Palette == 0x01)
+		{
+			return "pal1"
+		}
+		if (Palette == 0x02)
+		{
+			return "pal2"
+		}	
+		else // Failsafe
+		{
+			return "pal0"
+		}
+	}
+
+	return base.getCharacterPaletteKey(character)
+}
+
+
+
+
+function bool Standalone.onWriteToSpriteTable(s16 px, s16 py, u16 renderQueue)
+{
+	u8 gameMode = global.game_mode & 0x7f
+
+	if ((gameMode == 0x0c || gameMode == 0x08) && (objA0.update_address == 0x01a1f4))
+	{
+		Standalone.renderWithKosinskiCompression(px, py, 0x14C7D4, 0x60, renderQueue)
+		return true
+	}
+
+	return base.Standalone.onWriteToSpriteTable(px, py, renderQueue)
+}
+

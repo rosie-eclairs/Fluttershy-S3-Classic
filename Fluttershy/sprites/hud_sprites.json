@@ -1,0 +1,5 @@
+{
+	"hud_bonus_icon_orange":  { "File": "hud_text_sprites.png", "Rect": "13,61,12,19", "Center": "0,0" },
+	"hud_lives_icon_tails":  { "File": "hud_life_sprites.png", "Rect": "0,64,48,16", "Center": "0,0" },
+	"hud_lives_icon_miles":  { "File": "hud_life_sprites.png", "Rect": "0,64,48,16", "Center": "0,0" }
+}

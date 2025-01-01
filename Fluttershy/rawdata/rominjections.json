@@ -1,0 +1,22 @@
+{
+	"Super Muffins or Cupcakes...idk lol xD":
+	{
+		"File": "SuperButterflies.bin",
+		"RomInject": "0x14C7D4"
+	},
+	"Ending Pose":
+	{
+		"File": "endingpose.bin",
+		"RomInject": "0x38C19A"
+	},
+	"Ending Palette":
+	{
+		"File": "endingpalette.bin",
+		"RomInject": "0x60B4A"
+	},
+	"Ending Plane":
+	{
+		"File": "endingplane.bin",
+		"RomInject": "0x162914"
+	}
+}
